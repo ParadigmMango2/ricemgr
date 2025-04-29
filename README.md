@@ -4,6 +4,7 @@
   - Dotfiles/Required Files(i.e. background images)
     - [ ] Add dotfile/required file to profile
     - [ ] Remove dotfile/required file from profile
+    - [ ] Keep local copies of the most up-to-date dotfiles/required files
   - Track Required Software
     - [ ] Add software to required list
     - [ ] Remove software from required list
