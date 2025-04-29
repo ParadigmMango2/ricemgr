@@ -7,6 +7,8 @@
     - [ ] Remove dotfile/required file from profile
     - [ ] List dotfiles in profile
     - [ ] Keep local copies of the most up-to-date dotfiles/required files
+      - [ ] Manually update file
+      - [ ] Automatically update file
   - Track Required Software
     - [ ] Add software to required list
     - [ ] Remove software from required list
@@ -14,7 +16,9 @@
     - [ ] Track minimum versions (by default, do not track)
       - [ ] Update minimum version number
     - [ ] Required software checking
-    - [ ] Automatically create required software list
+    - [ ] Create required software list
+      - [ ] Manually update software list
+      - [ ] Automatically update software list
 - Rice Profiles
   - [ ] Make new rice profile
   - [ ] Delete rice profile
@@ -32,3 +36,9 @@
 - UI
   - [ ] CLI
   - [ ] TUI/GUI
+- Scripting and Event System
+  - [ ] Add script to profile
+  - [ ] Remove script from profile
+  - [ ] List scripts in profile
+  - [ ] Execute custom scripts
+  - [ ] Run scripts based on internal events
