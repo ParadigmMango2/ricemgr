@@ -15,3 +15,10 @@
   - [ ] Switch rice profiles
   - [ ] Export a complete rice profile(to *.rice)
   - [ ] Import a complete rice profile(from *.rice)
+- OS Support(this includes managing rice-related packages)
+  - [ ] Arch + Derivatives
+  - [ ] Ubuntu + Derivatives
+  - [ ] Mac
+- UI
+  - [ ] CLI
+  - [ ] TUI/GUI
