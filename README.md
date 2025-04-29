@@ -5,15 +5,20 @@
     - [ ] Add dotfile/required file to profile
       - [ ] Keep file paths user-agnostic
     - [ ] Remove dotfile/required file from profile
+    - [ ] List dotfiles in profile
     - [ ] Keep local copies of the most up-to-date dotfiles/required files
   - Track Required Software
     - [ ] Add software to required list
     - [ ] Remove software from required list
+    - [ ] List required software
+    - [ ] Track minimum versions (by default, do not track)
+      - [ ] Update minimum version number
     - [ ] Required software checking
     - [ ] Automatically create required software list
 - Rice Profiles
   - [ ] Make new rice profile
   - [ ] Delete rice profile
+  - [ ] List profiles
   - [ ] Switch rice profiles
     - [ ] Restart software that needs to be restarted
     - [ ] Ask the user to restart when required
