@@ -3,6 +3,7 @@
 - Rice file tracking
   - Dotfiles/Required Files(i.e. background images)
     - [ ] Add dotfile/required file to profile
+      - [ ] Keep file paths user-agnostic
     - [ ] Remove dotfile/required file from profile
     - [ ] Keep local copies of the most up-to-date dotfiles/required files
   - Track Required Software
@@ -18,6 +19,7 @@
     - [ ] Ask the user to restart when required
   - [ ] Export a complete rice profile(to *.rice)
   - [ ] Import a complete rice profile(from *.rice)
+    - [ ] Check for missing package requirements
 - OS Support(this includes managing rice-related packages)
   - [ ] Arch + Derivatives
   - [ ] Ubuntu + Derivatives
