@@ -14,6 +14,8 @@
   - [ ] Make new rice profile
   - [ ] Delete rice profile
   - [ ] Switch rice profiles
+    - [ ] Restart software that needs to be restarted
+    - [ ] Ask the user to restart when required
   - [ ] Export a complete rice profile(to *.rice)
   - [ ] Import a complete rice profile(from *.rice)
 - OS Support(this includes managing rice-related packages)
