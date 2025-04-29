@@ -1,1 +1,17 @@
 # ricemgr
+## Requirements
+- Rice file tracking
+  - Dotfiles/Required Files(i.e. background images)
+    - [ ] Add dotfile/required file to profile
+    - [ ] Remove dotfile/required file from profile
+  - Track Required Software
+    - [ ] Add software to required list
+    - [ ] Remove software from required list
+    - [ ] Required software checking
+    - [ ] Automatically create required software list
+- Rice Profiles
+  - [ ] Make new rice profile
+  - [ ] Delete rice profile
+  - [ ] Switch rice profiles
+  - [ ] Export a complete rice profile(to *.rice)
+  - [ ] Import a complete rice profile(from *.rice)
