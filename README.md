@@ -28,8 +28,7 @@ ricemgr/
     ├── list/
     │   └── <profile> / default: current profile
     ├── sync/
-    │   ├── <profile> / default: current profile
-    │   └── optional: all
+    │   └── <profile> / default: current profile / all
     ├── edit/
     │   └── <config file> / **add more detailed list later**
     ├── switch/
