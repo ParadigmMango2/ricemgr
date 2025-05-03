@@ -1,3 +1,4 @@
+import argparse
 import logging
 import os
 import xdg_base_dirs
@@ -26,10 +27,28 @@ def ensure_data_dir():
         logger.info("Built data directory")
 
 
-if __name__ == "__main__":
-    ensure_config_dir()
-    ensure_data_dir()
+parser = argparse.ArgumentParser(prog="ricemgr")
+subparsers = parser.add_subparsers(
+    title="commands",
+    # dest="command",
+    # help='Available commands',
+    required=True
+)
 
-    print(RICEMGR_DIR)
-    print("Hello World")
+profile_parser = subparsers.add_parser("profile", help="Manage rice profiles")
+profile_sub = profile_parser.add_subparsers(
+    title="profile commands",
+    # dest="profile_cmd",
+    required=True
+)
 
+
+args = parser.parse_args()
+
+
+# if __name__ == "__main__":
+#     ensure_config_dir()
+#     ensure_data_dir()
+
+#     print(RICEMGR_DIR)
+#     print("Hello World")

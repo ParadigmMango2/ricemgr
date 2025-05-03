@@ -1,4 +1,45 @@
 # ricemgr
+## Command Structure
+```
+ricemgr/
+├── file/
+│   ├── add/
+│   │   └── <file>
+│   ├── list/
+│   ├── delete/
+│   │   └── <file> / all
+│   └── sync/
+│       └── <file> / all
+├── package/
+│   ├── add/
+│   │   ├── <package>
+│   │   └── optional: -v --version
+│   ├── list/
+│   ├── remove/
+│   │   └── <package> / all
+│   ├── edit/
+│   └── sync/
+│       └── <package> / all
+└── profile/
+    ├── new/
+    │   └── <name>
+    ├── delete/
+    │   └── <profile>
+    ├── list/
+    │   └── <profile> / default: current profile
+    ├── sync/
+    │   ├── <profile> / default: current profile
+    │   └── optional: all
+    ├── edit/
+    │   └── <config file> / **add more detailed list later**
+    ├── switch/
+    │   └── <profile>
+    ├── export/
+    │   └── <file> / default: current profile name
+    └── import/
+        └── <file>
+```
+
 ## Requirements
 - Rice file tracking
   - Dotfiles/Required Files(i.e. background images)
