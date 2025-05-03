@@ -6,31 +6,30 @@ ricemgr/
 │   ├── add/
 │   │   └── <file>
 │   ├── list/
-│   ├── delete/
+│   ├── sync/
 │   │   └── <file> / all
-│   └── sync/
+│   └── remove/
 │       └── <file> / all
 ├── package/
 │   ├── add/
 │   │   ├── <package>
 │   │   └── optional: -v --version
 │   ├── list/
-│   ├── remove/
+│   ├── sync/
 │   │   └── <package> / all
 │   ├── edit/
-│   └── sync/
+│   └── remove/
 │       └── <package> / all
 └── profile/
     ├── new/
     │   └── <name>
-    ├── delete/
-    │   └── <profile>
     ├── list/
     │   └── <profile> / default: current profile
     ├── sync/
-    │   └── <profile> / default: current profile / all
     ├── edit/
     │   └── <config file> / **add more detailed list later**
+    ├── delete/
+    │   └── <profile>
     ├── switch/
     │   └── <profile>
     ├── export/
