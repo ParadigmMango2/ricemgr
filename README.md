@@ -36,7 +36,8 @@ ricemgr/
 │   │   └── <file> / default: current profile name
 │   └── import/
 │       └── <file>
-└── clean
+├── init/
+└── clean/
 ```
 
 ## Requirements

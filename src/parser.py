@@ -1,4 +1,6 @@
 import argparse
+import commands
+import core
 
 
 # ===== Main Parser =====
@@ -123,6 +125,12 @@ import_profile_parser.add_argument("file", help="Rice profile file")
 
 
 
+# ===== init parser =====
+init_parser = command_subparser.add_parser("init", help="Manually initialize ricemgr")
+init_parser.set_defaults(func=commands.handle_init)
+
+
+
 # ===== clean parser =====
 clean_parser = command_subparser.add_parser("clean", help="Clean all ricemgr files")
-# parser_profile_new.set_defaults(func=handle_clean)
+clean_parser.set_defaults(func=commands.handle_clean)
