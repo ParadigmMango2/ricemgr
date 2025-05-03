@@ -11,6 +11,7 @@ command_subparser = parser.add_subparsers(
 )
 
 
+
 # --- File Parser ----
 file_parser = command_subparser.add_parser("file", help="Manage rice dotfiles and other files")
 file_subparser = file_parser.add_subparsers(
@@ -119,3 +120,9 @@ export_profile_parser.add_argument("file", help="Rice profile file")
 import_profile_parser = profile_subparser.add_parser("import", help="Import a rice profile")
 import_profile_parser.add_argument("file", help="Rice profile file")
 # parser_profile_new.set_defaults(func=handle_import_profile)
+
+
+
+# ===== clean parser =====
+clean_parser = command_subparser.add_parser("clean", help="Clean all ricemgr files")
+# parser_profile_new.set_defaults(func=handle_clean)

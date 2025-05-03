@@ -20,22 +20,23 @@ ricemgr/
 │   ├── edit/
 │   └── remove/
 │       └── <package> / all
-└── profile/
-    ├── new/
-    │   └── <name>
-    ├── list/
-    │   └── <profile> / default: current profile
-    ├── sync/
-    ├── edit/
-    │   └── <config file> / **add more detailed list later**
-    ├── delete/
-    │   └── <profile>
-    ├── switch/
-    │   └── <profile>
-    ├── export/
-    │   └── <file> / default: current profile name
-    └── import/
-        └── <file>
+├── profile/
+│   ├── new/
+│   │   └── <name>
+│   ├── list/
+│   │   └── <profile> / default: current profile
+│   ├── sync/
+│   ├── edit/
+│   │   └── <config file> / **add more detailed list later**
+│   ├── delete/
+│   │   └── <profile>
+│   ├── switch/
+│   │   └── <profile>
+│   ├── export/
+│   │   └── <file> / default: current profile name
+│   └── import/
+│       └── <file>
+└── clean
 ```
 
 ## Requirements
