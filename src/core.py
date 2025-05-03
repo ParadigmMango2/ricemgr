@@ -12,7 +12,9 @@ def ensure_config_dir():
     if not os.path.exists(settings.CONFIG_DIR):
         os.makedirs(settings.CONFIG_DIR)
 
-        
+        touch(settings.PACKAGES_PATH)
+        touch(settings.PROFILES_PATH)
+        touch(settings.ENVIRONMENT_PATH)
 
         logger.info("Built config directory")
 
@@ -22,8 +24,6 @@ def ensure_data_dir():
             or not os.path.exists(settings.PROFILE_DIR):
         os.makedirs(settings.DATA_DIR, exist_ok=True)
         os.makedirs(settings.PROFILE_DIR)
-
-        
 
         logger.info("Built data directory")
 

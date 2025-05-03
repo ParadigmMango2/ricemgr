@@ -1,6 +1,5 @@
 import argparse
 import commands
-import core
 
 
 # ===== Main Parser =====
