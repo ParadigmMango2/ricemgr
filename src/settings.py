@@ -11,6 +11,8 @@ LOG_FILE = "ricemgr.log"
 LOG_PATH = os.path.join(DATA_DIR, LOG_FILE)
 LOG_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
 
+FILES_FILE = "files.toml"
+FILES_PATH = os.path.join(CONFIG_DIR, FILES_FILE)
 PACKAGES_FILE = "packages.toml"
 PACKAGES_PATH = os.path.join(CONFIG_DIR, PACKAGES_FILE)
 PROFILES_FILE = "profiles.toml"

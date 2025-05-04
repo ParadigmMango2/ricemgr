@@ -87,7 +87,7 @@ profile_subparser = profile_parser.add_subparsers(
 # new profile parser
 new_profile_parser = profile_subparser.add_parser("new", help="Create a new rice profile")
 new_profile_parser.add_argument("name", help="Profile name")
-# parser_profile_new.set_defaults(func=handle_new_profile)
+new_profile_parser.set_defaults(func=commands.handle_new_profile)
 
 # new profile parser
 list_profile_parser = profile_subparser.add_parser("list", help="List rice profiles")
