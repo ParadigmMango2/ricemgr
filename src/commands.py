@@ -1,10 +1,11 @@
 import os
+import shutil
 import textwrap
 
 from core import confirm_dialog, init, touch
+from paths import SmartPath
 import settings
 from shared import logger
-import shutil
 
 
 def handle_new_profile(args):
@@ -28,7 +29,7 @@ def handle_new_profile(args):
             
             [[profiles]]
             name = \"{args.name}\"
-            path = \"{profile_path}\"
+            path = \"{SmartPath.to_smartpath(profile_path)}\"
         """)) 
     # Try not to rely on the profile path here so we can keep the files
     # user-agnostic
