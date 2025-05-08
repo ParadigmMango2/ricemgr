@@ -76,7 +76,7 @@ ricemgr/
   - [ ] Ubuntu + Derivatives
   - [ ] Mac
 - UI
-  - [ ] CLI
+  - [x] CLI
   - [ ] TUI/GUI
 - Scripting and Event System
   - [ ] Add script to profile
