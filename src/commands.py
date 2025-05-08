@@ -1,8 +1,9 @@
 import os
 import shutil
 import textwrap
+import toml
 
-from core import confirm_dialog, init, touch
+from core import confirm_dialog, init, modify_toml, touch
 from paths import SmartPath
 import settings
 from shared import logger
@@ -23,18 +24,36 @@ def handle_new_profile(args):
     packages_path = os.path.join(profile_path, packages_file)
     touch(packages_path)
 
-    with open(settings.PROFILES_PATH, "a") as file:
-        file.write(textwrap.dedent(f"""\
-            
-            
-            [[profiles]]
-            name = \"{args.name}\"
-            path = \"{SmartPath.to_smartpath(profile_path)}\"
-        """)) 
-    # Try not to rely on the profile path here so we can keep the files
-    # user-agnostic
+    def add_profile_to_toml(data):
+        if "profiles" not in data:
+            data["profiles"] = []
+
+        data["profiles"].append({
+            "name": args.name,
+            "path": SmartPath.to_smartpath(profile_path)
+        })
+
+    modify_toml(settings.PROFILES_PATH, add_profile_to_toml)
     
+    print(f"Built profile \"{args.name}\"")
     logger.info(f"Built profile \"{args.name}\"")
+
+
+def handle_delete_profile(args):
+    with open(settings.PROFILES_PATH, "r") as file:
+        data = toml.load(file)
+
+    print(data)
+
+    confirm_dialog()
+
+    with open(settings.PROFILES_PATH, "w") as file:
+        toml.dump(data, file)
+
+    # format_toml(settings.PROFILES_PATH)
+
+    print(f"Deleted profile \"{args.profile}\"")
+    logger.info(f"Deleted profile \"{args.profile}\"")
 
 
 def handle_init(args):

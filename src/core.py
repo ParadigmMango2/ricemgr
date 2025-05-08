@@ -1,20 +1,23 @@
 import os
 import textwrap
-import tomllib
+import toml
 
 import settings
 from shared import logger
 
 
+# ====== FILE OPERATIONS ======
 def touch(file_path):
     open(file_path, 'a').close()
 
 
 def init_profiles_conf():
+    data = {
+        "title": "profiles"
+    }
+
     with open(settings.PROFILES_PATH, 'w') as file:
-        file.write(textwrap.dedent("""\
-            title = "profiles"
-        """))
+        toml.dump(data, file)
 
 
 def ensure_config_dir():
@@ -39,6 +42,17 @@ def ensure_data_dir():
         logger.info("Built data directory")
 
 
+def modify_toml(toml_file_path, modifier_func):
+    with open(toml_file_path, "r") as file:
+        data = toml.load(file)
+
+    modifier_func(data)
+
+    with open(toml_file_path, "w") as file:
+        toml.dump(data, file)
+
+
+# ====== CLI UTILS ======
 def confirm_dialog():
     response = input("Are you sure you want to do this (y/N): ")
 
@@ -46,6 +60,7 @@ def confirm_dialog():
         exit(0)
 
 
+# ====== MISC ======
 def init():
     ensure_config_dir()
     ensure_data_dir()

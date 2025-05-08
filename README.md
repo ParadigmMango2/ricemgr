@@ -73,6 +73,7 @@ ricemgr/
   - [ ] Export a complete rice profile(to *.rice)
   - [ ] Import a complete rice profile(from *.rice)
     - [ ] Check for missing package requirements
+    - [ ] Rename duplicate names
 - [ ] XDG Compliant
 - OS Support(this includes managing rice-related packages)
   - [ ] Arch + Derivatives

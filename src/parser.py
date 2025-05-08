@@ -105,7 +105,7 @@ edit_profile_parser.add_argument("config", help="Config file")
 # delete profile parser
 delete_profile_parser = profile_subparser.add_parser("delete", help="Delete a rice profile")
 delete_profile_parser.add_argument("profile", help="Profile")
-# parser_profile_new.set_defaults(func=handle_delete_profile)
+delete_profile_parser.set_defaults(func=commands.handle_delete_profile)
 
 # switch profile parser
 switch_profile_parser = profile_subparser.add_parser("switch", help="Switch rice profile")
