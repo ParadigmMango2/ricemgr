@@ -44,7 +44,7 @@ ricemgr/
 - Rice file tracking
   - Dotfiles/Required Files(i.e. background images)
     - [ ] Add dotfile/required file to profile
-      - [ ] Keep file paths user-agnostic
+      - [x] Keep file paths user-agnostic
     - [ ] Remove dotfile/required file from profile
     - [ ] List dotfiles in profile
     - [ ] Keep local copies of the most up-to-date dotfiles/required files
