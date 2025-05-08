@@ -26,6 +26,8 @@ ricemgr/
 │   ├── list/
 │   │   └── <profile> / default: current profile
 │   ├── sync/
+│   ├── rename/
+│   │   └── <name>
 │   ├── edit/
 │   │   └── <config file> / **add more detailed list later**
 │   ├── delete/
@@ -62,7 +64,8 @@ ricemgr/
       - [ ] Automatically update software list
 - Rice Profiles
   - [ ] Make new rice profile
-  - [ ] Delete rice profile
+  - [ ] Rename profiles
+  - [ ] Delete rice profiles
   - [ ] List profiles
   - [ ] Switch rice profiles
     - [ ] Restart software that needs to be restarted
